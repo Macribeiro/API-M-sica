@@ -1,0 +1,66 @@
+---------------------------------------------------------------------------------------------ALUNO---------------------------------------------------------------------------------------------
+
+Matheus Claudino Ribeiro 
+RA: 04718-043
+Sistemas de Informação
+
+---------------------------------O PORQUE ESCOLHI PYTHON E VISUAL STUDIO CODE---------------------------------
+
+Escolhi a Linguagem Python por ela oferecer muitas bibliotecas que facilitam o trabalho no código.
+E escolhi o VS Code por ele ter o IntelliSense personalizável, ter uma depuração de código direto no editor, ter extensões de todas e qualquer tipo de linguagem (seja ela web ou front) e por ser um open source.
+
+---------------------------------QUAL BIBLIOTECA USEI ---------------------------------
+
+Usei a biblioteca urllib juntamente com seus módulos Request e urlopen.
+
+---------------------------------INSTALAÇÃO DA BIBLIOTECA---------------------------------
+
+Para instalar a biblioteca, é necessário abrir o CMD(Prompt de Comando) e digitar os seguintes comandos.
+*OBS você deve ter o Python instalado e atualizado na sua máquina.*
+
+py -m pip install urllib
+
+*caso apareça algum aviso falando sobre precisar dar algum update, no CMD irá aparecer em linhas amarelas com uma mensagem alertando sobre você estar usando uma versão antiga do pip. E na própria mensagem haverá um comando seguido de aspas simples (' ') para que você possa atualizar. Copie o código e execute para atualizar. Depois tente instalar de novo a biblioteca.*
+
+---------------------------------CONFIGURANDO O PYTHON INTERPRETER NO VISUAL STUDIO CODE---------------------------------
+
+Se você preferir abrir o arquivo usando outra plataforma, como Pycharm ou o Python IDLE, não há nenhum problema.
+
+Caso você queira abrir o código usando o VS Code, você terá que seguir alguns passos para que ele entenda que você quer usar o que foi instalado das bibliotecas acima.
+
+Com o Visual Studio Code aberto vá em
+File -> Open Folder e abra a pasta "04718-043 - Projeto API"
+Pressione CTRL + SHIFT + P.
+Pesquise por Python.
+*Selecione"Python: Select Interprete". (Talvez não apareça essa opção. Caso isso ocorra, selecio apenas Python)
+E escolha a versão do seu Python (muito provavelmente será essa -> 3.8.2 - 64 bit).*
+Aperte F5
+Vai abrir um Debug Configuration, então você clica em -> "Python File Debug the currently active Python file"
+E o programa irá rodar
+
+---------------------------------SOBRE OS CÓDIGOS EM PYTHON---------------------------------
+
+input -> comando para o usuário digitar
+.replace() -> é uma função que faz com que haja uma substituição do que havia na variável e do que terá a seguir. Essa função é importante pois nas URLs o espaço é usado como '-'.
+
+as seguintes funções são funções da biblioteca urllib:
+.urlopen() -> abre uma URL para leitura; o .read() serve para ler os dados e armazenar na varíavel.
+.decode('unicode_escape')  -> Decode signifca "Decodificar"; O unicode é uma especificação que visa listar todos os caracteres usados ​​pelas linguagens humanas e atribuir a cada caractere seu próprio código exclusivo.
+Caso eu não houvesse usado o método acima, o resultado retornado seria a letra da música, porém, com uma formatação sem quebra de linhas. No lugar das quebras de linhas haveriam \\n e \\r.
+
+---------------------------------TESTE DE ROTEIRO PERFEITO ---------------------------------
+
+Tenha certeza que digitou o nome do artista/banda corretamente para que não haja erro ao tentar conectar ao
+HTTP da API.
+
+Exemplo: artista: blink 182
+         titulo: bored to death
+
+*Importante notar que se você tentar digitar o nome do artista/banda ou o título da música com acentos, haverá 
+um erro de formatação na URL*
+
+---------------------------------------------------------------------------------------------SOBRE A PASTA .VSCODE---------------------------------------------------------------------------------------------
+
+Creio que ela não interfirá em nada, mesmo que você use, ou não, o Visual Studio Code.
+
+---------------------------------------------------------------------------------------------
